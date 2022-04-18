@@ -5,8 +5,6 @@ risk-free dynamics.
 
 ![Simple CEV dynamics](SimpleCEV_dynamics.jpg "Simple CEV dynamics").
 
-<img src="https://render.githubusercontent.com/render/math?math={\color{white}\dS = \lambda{S}^{\beta}dW}">
-
 where 𝜆 is the CEV volatility, the elasticity 𝛽 is a parameter between 0 and 1, and 𝑊 is a standard
 Brownian Motion under the risk-neutral measure. For simplicity, we ignore interest rate and
 dividends so 𝑆 is a martingale under the pricing measure.

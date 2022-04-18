@@ -2,8 +2,8 @@ import math
 from scipy.stats import norm
 import numpy as np
 
-from instrument_base import MktInstrument
-from option import Option
+from .mkt_instrument_base import MktInstrument
+from qf.pricing_util.option import Option
 
 """
 CEV model

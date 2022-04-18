@@ -1,4 +1,4 @@
-from payoff_base import *
+from .payoff import PayOff
 
 class Option:
     def __init__(self, payoff: PayOff, expiry: float):

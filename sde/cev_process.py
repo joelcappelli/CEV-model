@@ -1,7 +1,7 @@
 import math
 import numpy as np
 
-from process_base import SDEProcess
+from .process_base import SDEProcess
 
 class CEV(SDEProcess):
     def __init__(self, drift: float, vol: float, power: float):

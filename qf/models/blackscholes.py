@@ -2,8 +2,8 @@ import numpy as np
 import math
 from scipy.stats import norm
 
-from instrument_base import MktInstrument
-from option import Option
+from .mkt_instrument_base import MktInstrument
+from qf.pricing_util.option import Option
 
 class BS(MktInstrument):
     def __init__(self,spot: float,
@@ -51,3 +51,15 @@ class BS(MktInstrument):
             return norm.cdf(d1)*self.Spot - norm.cdf(d2)*self._discountedStrike
         elif self._option.PayOffType == 'put':
             return -norm.cdf(-d1)*self.Spot + norm.cdf(-d2)*self._discountedStrike
+
+if __name__ == "__main__":
+    from qf.pricing_util.option import EuropeanOption
+    from qf.pricing_util.payoff import PayOffCall
+
+    test_instrument = BS(spot=100,
+                         sig=0.5,
+                         r=0.05,
+                         option=EuropeanOption(PayOffCall(strike=110), expiry=0.5)
+                         )
+
+    print(test_instrument.Analytical_NPV())

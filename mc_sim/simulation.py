@@ -2,8 +2,8 @@ import math
 import numpy as np
 from scipy.stats import norm
 
-from process_base import SDEProcess
-from instrument_base import MktInstrument
+from sde.process_base import SDEProcess
+from qf.models.mkt_instrument_base import MktInstrument
 
 class SimulationConfig:
 

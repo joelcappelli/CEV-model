@@ -2,7 +2,8 @@
 The goal is to implement the valuation of European options in the so-called CEV
 (Constant Elasticity Volatility) model, a simple extension of the Black-Scholes model specified by the
 risk-free dynamics.
-See notebook for output examples
+
+### See notebook for output examples
 https://github.com/joelcappelli/CEV-model/blob/main/main.ipynb
 
 ![CEV dynamics](CEV_dynamics.jpg "CEV dynamics").

@@ -9,6 +9,14 @@ class MktInstrument:
         return self._spot
 
     @property
+    def Strike(self):
+        pass
+
+    @property
+    def Maturity(self):
+        pass
+
+    @property
     def Q_drift(self):
         pass
 
@@ -17,8 +25,15 @@ class MktInstrument:
         pass
 
     @property
+    def LogProcess_Q_drift(self):
+        pass
+
+    @property
     def CashflowTimes(self):
         pass
 
-    def NPV(self, cashflow_times: np.ndarray, underlying_values: np.ndarray):
+    def PayOff(self):
+        pass
+
+    def NPV(self, realisation_times: np.ndarray, underlying_values: np.ndarray):
         pass

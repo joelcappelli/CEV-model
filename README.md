@@ -3,7 +3,7 @@ The goal is to implement the valuation of European options in the so-called CEV
 (Constant Elasticity Volatility) model, a simple extension of the Black-Scholes model specified by the
 risk-free dynamics.
 
-![Simple CEV dynamics](SimpleCEV_dynamics.jpg "Simple CEV dynamics").
+![CEV dynamics](CEV_dynamics.jpg "CEV dynamics").
 
 where 𝜆 is the CEV volatility, the elasticity 𝛽 is a parameter between 0 and 1, and 𝑊 is a standard
 Brownian Motion under the risk-neutral measure. For simplicity, we ignore interest rate and

@@ -89,7 +89,9 @@ class SimStats:
         return 2*norm.ppf(self._CI)*math.sqrt(self.SimVariance/float(self._simsDone))
 
 """ To do:
+    - add a wrapper class for a portfolio of instruments 
     - add in numeraire process for real world 
+    - extend for multiple underlyings
 """
 class SimMapping:
     def __init__(self, underlying_process: SDEProcess, mkt_instrument: MktInstrument):

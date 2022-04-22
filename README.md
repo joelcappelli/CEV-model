@@ -1,13 +1,11 @@
 # CEV-model
 The goal is to implement the valuation of European options in the so-called CEV
-(Constant Elasticity Volatility) model, a simple extension of the Black-Scholes model specified by the
-risk-free dynamics.
+(Constant Elasticity Volatility) model, a simple extension of the Black-Scholes model specified by the dynamics.
+
+### See notebook for output examples
+https://github.com/joelcappelli/CEV-model/blob/main/main.ipynb
 
 ![CEV dynamics](CEV_dynamics.jpg "CEV dynamics").
-
-where 𝜆 is the CEV volatility, the elasticity 𝛽 is a parameter between 0 and 1, and 𝑊 is a standard
-Brownian Motion under the risk-neutral measure. For simplicity, we ignore interest rate and
-dividends so 𝑆 is a martingale under the pricing measure.
 
 #### 1. Determine the analytical solution 
 Value a European call under the CEV dynamics as a function of the spot S<sub>0</sub>, 𝜆, 𝛽, expiry 𝑇, and strike 𝐾 of the call.
